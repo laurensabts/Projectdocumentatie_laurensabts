@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 01 — Prototyping Tools | Laurens Abts</title>
+
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <div class="font-semibold tracking-tight">Laurens Abts -  1GDM2</div>
+
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+  <a href="index.html#top" class="hover:text-black">Home</a>
+<a href="index.html#weeks" class="hover:text-black">Weken</a>
+<a href="index.html#design" class="hover:text-black">Design</a>
+<a href="index.html#about" class="hover:text-black">Over</a>
+
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4 text-sm">
+      <a href="login.html" class="text-gray-600 hover:text-black">Login</a>
+      <a href="signup.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+        Sign up
+      </a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-sm border px-3 py-1 rounded-full">
+      Menu
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white px-6 py-6 flex flex-col items-center space-y-4 text-sm">
+   <a href="index.html#top" class="hover:text-black">Home</a>
+<a href="index.html#weeks" class="hover:text-black">Weken</a>
+<a href="index.html#design" class="hover:text-black">Design</a>
+<a href="index.html#about" class="hover:text-black">Over</a>
+
+  </div>
+</header>
+
+  <!-- PAGE INTRO -->
+  <section class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+
+     <h1 class="font-title text-5xl md:text-6xl font-bold mb-12">
+     Design Keuzes
+     </h1>
+
+      <h1 class="font-title text-3xl md:text-4xl font-semibold mb-4">
+        Over kleuren & Typografie
+      </h1>
+
+      <p class=class="font-title text-xl font-semibold mb-2">
+Kleuren en typografie spelen een essentiële rol binnen elk ontwerp. Vanaf de eerste low-fidelity schetsen tot de volledig uitgewerkte schermen komen deze twee elementen voortdurend terug. Bij elke stap moest ik nadenken over vragen zoals: welke kleuren gebruik ik waar, en vooral waarom? Welke lettertypes passen het best bij bepaalde onderdelen? En in welke context wordt de informatie gelezen: op een scherm of op papier? Deze vragen bepalen mee of je kiest voor een schreefletter of net niet, en hoe leesbaar en toegankelijk het ontwerp uiteindelijk wordt.
+Om mijn keuzes duidelijk te maken, licht ik hieronder per onderdeel toe welke kleuren en lettertypes ik heb gebruikt en met welke reden.
+</p>
+
+    </div>
+  </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        Treinschermen
+      </h2>
+
+      <h3 class="text-2xl font-semibold mb-4">
+        Kleuren
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Voor de treinschermen koos ik voor een combinatie van lichtgroen en donkerblauw
+(#4F9E49 & #02022A). Deze kleuren zorgen voor een sterk en duidelijk contrast, 
+wat belangrijk is voor de leesbaarheid, zeker in een omgeving waar informatie 
+snel moet worden opgepikt. Daarnaast is het contrast ook geschikt voor kleurenblinden, 
+wat de toegankelijkheid van de schermen verhoogt. Beide kleuren werken bovendien goed 
+samen met wit, waardoor teksten en iconen extra duidelijk blijven, zelfs vanop afstand.
+      </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Kleurenpalet schermen.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+</div>
+</section>
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+
+ <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/inter.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+
+    <div class="flex-1">
+      <h3 class="text-2xl font-semibold mb-4">
+        Typografie
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+       Als lettertype gebruikte ik Inter, een font dat bekendstaat om zijn 
+        goede leesbaarheid op digitale schermen. Aangezien treinschermen vaak 
+        snel gelezen worden en vanop verschillende afstanden, was een helder en 
+        eenvoudig lettertype hier essentieel. De lettergrootte varieert per scherm, 
+        afhankelijk van de inhoud en het belang van de informatie. Deze groottes 
+        liggen tussen 55 en 110, zodat de tekst duidelijk zichtbaar blijft in verschillende situaties.
+      </p>
+    </div>
+
+</div>
+</section>
+
+
+
+ <section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        Figma trein-app
+      </h2>
+
+      <h3 class="text-2xl font-semibold mb-4">
+        Kleuren
+            </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Ook in de Figma trein-app werkte ik met hetzelfde groen-blauw contrast 
+        om visuele consistentie te behouden. Tijdens het ontwerpen merkte ik echter 
+        dat het oorspronkelijke donkerblauw te zwaar en te donker oogde op een kleiner 
+        scherm, zoals dat van een smartphone. Omdat ik een frissere en lichtere uitstraling 
+        wilde creëren, koos ik ervoor om het blauw een tint lichter te maken.
+        •	Groen: #4F9E49
+        •	Blauw: #021E3C
+        Deze aanpassing zorgt voor een aangenamere gebruikerservaring zonder het contrast en de 
+        herkenbaarheid te verliezen.
+      </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Kleurenpalet app.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+</div>
+</section>
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+
+ <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/inter.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+
+    <div class="flex-1">
+      <h3 class="text-2xl font-semibold mb-4">
+        Typografie
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+       Ook hier gebruikte ik Inter, omdat het lettertype zeer goed leesbaar blijft op 
+       kleinere schermen zoals smartphones. De lettergroottes liggen over het algemeen tussen 
+       16 en 20, wat comfortabel lezen mogelijk maakt zonder het scherm te druk te maken. 
+       Zo blijft de interface overzichtelijk en gebruiksvriendelijk, zelfs bij langere interacties.
+     </p>
+    </div>
+
+</div>
+</section>
+
+
+
+
+
+ <section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        Website – designkeuzes
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed">
+        Voor deze website was het iets meer zoeken naar welke kleuren en lettertypes 
+        het meest geschikt waren om een gebruiksvriendelijke en rustige omgeving te 
+        creëren. Zoals te zien is bij mijn eerste versie, was de website aanvankelijk vrij 
+        druk op vlak van kleurgebruik. Ik was toen vooral aan het experimenteren met gradients, 
+        verschillende accentkleuren per element en opvallende combinaties. Hoewel dit interessant 
+        was om te testen, zorgde het uiteindelijk voor een erg intensief scherm om naar te kijken.
+        <br> <br> 
+        Zeker wanneer hier ook afbeeldingen aan werden toegevoegd, werd het geheel snel chaotisch en visueel 
+        vermoeiend. Door de vele kleuren en contrasten ging de focus verloren en werd het moeilijker 
+        voor de gebruiker om de inhoud op een comfortabele manier te volgen. Daarom heb ik bewust gekozen 
+        om volledig over te schakelen naar een soberder en rustiger design, met gebruiksvriendelijkheid 
+        als belangrijkste uitgangspunt.
+        <br> <br>
+        In de uiteindelijke versie werk ik voornamelijk met wit, verschillende 
+        grijstinten en donkerblauw. Deze kleuren zorgen voor een neutrale en 
+        overzichtelijke basis, waarbij de aandacht automatisch naar de inhoud wordt geleid. 
+        De grijswaarden variëren subtiel per titel of per sectie, wat helpt om hiërarchie aan 
+        te brengen zonder dat het ontwerp te druk wordt.
+     </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Webverschil.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+</div>
+</section>
+
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+
+ <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Kleurenpalet web.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+
+    <div class="flex-1">
+      <h3 class="text-2xl font-semibold mb-4">
+        Kleurgebruik
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+       De gekozen kleuren zijn bewust neutraal en goed leesbaar,
+        zowel op grote schermen als op kleinere toestellen. 
+        Ze zorgen voor voldoende contrast en dragen bij aan een 
+        professionele en toegankelijke uitstraling. <br>
+        Functie	Kleur <br> <br>
+        Primair donker           #0B132B <br><br>
+        Hoofdtekst	             #111827<br><br>
+        Secundaire tekst	       #4B5563<br><br>
+        Subtiel	                 #6B7280<br><br>
+        Lichtgrijze achtergrond	 #F9FAFB<br><br>
+        Border	                 #E5E7EB<br><br>
+        Wit	                     #FFFFFF<br>
+        Deze combinatie maakt het mogelijk om duidelijke visuele 
+        hiërarchie te creëren, zonder de gebruiker te overweldigen.
+     </p>
+    </div>
+
+</div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+
+    <div class="flex-1">
+      <h3 class="text-2xl font-semibold mb-4">
+        Lettertype
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+   Ook bij de keuze van lettertypes stond leesbaarheid centraal. 
+   Voor titels koos ik voor DM Serif Display, een serif-lettertype dat zorgt voor 
+   een sterk visueel accent en een duidelijke scheiding tussen titels en lopende tekst. 
+   Dit geeft de website wat meer karakter zonder afbreuk te doen aan de rust. <br> <br> 
+    Voor de bodytekst en UI-elementen gebruikte ik Source Serif 4. 
+    Dit lettertype leest vlot op schermen en voelt tegelijk professioneel en aangenaam aan. 
+    Door slechts twee lettertypes te gebruiken, blijft het ontwerp consistent en overzichtelijk.
+
+     </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Lettertype web.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+  
+
+</div>
+</section>
+  </main>
+
+
+
+    <section class="border-t border-gray-200 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 py-16 text-center">
+
+    <p class="text-sm text-gray-500 mb-6">
+      Bekijk ook de andere weken
+    </p>
+
+    <div class="flex justify-center gap-2 flex-wrap">
+
+          <a href="week1.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 01
+      </a>
+
+      <a href="week2.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 02
+      </a>
+
+
+      <a href="week3.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 03
+      </a>
+      
+
+      <a href="week4.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 04
+      </a>
+
+      <a href="week5.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 05
+      </a>
+
+      <a href="week6.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 06
+      </a>
+
+      <a href="week7,8 & 9.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 07 - 09
+      </a>
+
+      <a href="week10.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 10
+      </a>
+
+      <a href="week11-14.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 11-14
+      </a>
+
+    <a href="Kleuren & Typografie.html"
+         class="px-4 py-2 rounded-full bg-black text-white border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        DESIGN KEUZES
+      </a>
+
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+    © 2025 Laurens Abts — Projectdocumentatie PRTT
+  </footer>
+
+
+
+  <script>
+  menuBtn.addEventListener("click", () => {
+  if (mobileMenu.classList.contains("hidden")) {
+    mobileMenu.classList.remove("hidden");
+    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+  } else {
+    mobileMenu.style.maxHeight = "0";
+    setTimeout(() => mobileMenu.classList.add("hidden"), 300); // wacht tot transition klaar is
+  }
+});
+</script>
+
+
+
+
+
+
+<div
+  id="lightbox"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
+>
+  <img
+    id="lightbox-img"
+    class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl"
+  />
+</div>
+
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // Alle afbeeldingen met class "zoomable"
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+    });
+  });
+
+  // Sluiten bij klik
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  });
+</script>
+
+
+</body>
+</html>

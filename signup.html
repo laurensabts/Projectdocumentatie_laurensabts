@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up</title>
+
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="min-h-screen bg-[#A7D1E0] flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-md p-10 rounded-2xl shadow-2xl">
+
+    <h1 class="font-title text-4xl text-center mb-2">
+      Maak een account
+    </h1>
+
+    <p class="text-center text-gray-500 mb-8">
+      Dit is een gesimuleerde signup
+    </p>
+
+    <form id="signupForm">
+      <input type="email" id="email" placeholder="Email"
+        class="w-full border rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-black">
+
+      <input type="password" id="password" placeholder="Password"
+        class="w-full border rounded-lg p-3 mb-6 focus:outline-none focus:ring-2 focus:ring-black">
+
+      <button
+        class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition">
+        Account aanmaken
+      </button>
+    </form>
+
+    <p class="text-sm text-center mt-6">
+      Heb je al een account?
+      <a href="login.html" class="underline">Login</a>
+    </p>
+
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault()
+
+      const email = document.getElementById('email').value
+      const password = document.getElementById('password').value
+
+      if (!email || !password) {
+        alert('Vul alle velden in')
+        return
+      }
+
+      // Fake account opslaan
+      localStorage.setItem('fakeUser', email)
+
+      // Doorsturen naar "ingelogde" home
+      window.location.href = 'index.html'
+    })
+  </script>
+
+</body>
+</html>

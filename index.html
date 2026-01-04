@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laurens Abts — Projectdocumentatie</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind output -->
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+
+<body 
+class="bg-white text-gray-900 scroll-smooth">
+<div id="top"></div>
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <div class="font-semibold tracking-tight">Laurens Abts -  1GDM2</div>
+
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="#top" class="hover:text-black">Home</a>
+      <a href="#weeks" class="hover:text-black">Weken</a>
+      <a href="#design" class="hover:text-black">Design</a>
+      <a href="#about" class="hover:text-black">Over</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4 text-sm">
+      <a href="login.html" class="text-gray-600 hover:text-black">Login</a>
+      <a href="signup.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+        Sign up
+      </a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-sm border px-3 py-1 rounded-full">
+      Menu
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white px-6 py-6 flex flex-col items-center space-y-4 text-sm">
+    <a href="#top" class="block">Home</a>
+    <a href="#weeks" class="block">Weken</a>
+    <a href="#design" class="block">Design</a>
+    <a href="#about" class="block">Over</a>
+  </div>
+</header>
+
+<section
+  id="hero"
+  class="relative min-h-[75vh] bg-[#0B132B] text-[#F5F7FA] overflow-hidden"
+>
+
+  <!-- Afbeelding + gradient -->
+  <div class="absolute inset-0 cursor-zoom-in">
+    <img
+      src="./img/img.jpg"
+      alt="Hero afbeelding"
+      class="zoomable w-full h-full object-cover"
+    />
+
+    <!-- 👇 DIT IS DE FIX -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0B132B] via-[#0B132B]/70 to-transparent pointer-events-none"></div>
+</div>
+
+  <!-- Content -->
+  <div class="relative z-10 pointer-events-none max-w-7xl mx-auto px-6 min-h-[75vh] grid md:grid-cols-2">
+    <div class="flex flex-col justify-center py-20 pr-12">
+
+      <h1 class="font-title text-5xl md:text-6xl font-bold leading-tight mb-10">
+        Lost in <span class="italic">tra(i)</span>nslation
+      </h1>
+
+
+      <p class="text-lg text-[#D1D5DB] max-w-xl mb-10">
+       Hey, ik ben Laurens Abts. <br><br>
+          Op deze website vind je mijn projectdocumentatie van alle opdrachten die 
+          we hebben gemaakt voor het vak Prototyping Tools.
+          <br><br>
+          Per week kan je bekijken wat we allemaal hebben geleerd en 
+          gemaakt, zowel tijdens de lessen als thuis. 
+          In deze weken werkten we aan het ontwerpen van treinschermen, 
+          met een focus op taaltoegankelijkheid voor anderstaligen.
+          <br><br>
+          Je vindt hier schetsen in zowel low- als high-fidelity, 
+          samen met uitwerkingen in Figma. Daarnaast leerden we ook hoe 
+          we een website moesten opbouwen met code.
+          <br><br>
+          Per week krijg je meer uitleg, dus neem zeker eens een kijkje.
+      </p>
+
+     
+     <a
+        href="#weeks"
+        class="inline-block bg-white text-[#0B132B] px-7 py-3 rounded-full text-sm font-medium hover:bg-[#E5E7EB] transition pointer-events-auto"
+      >
+        Bekijk het proces
+      </a>
+<br> 
+      <a
+  href="./pdf/PROJECTDOCUMENTATIE-PRTT-LAURENS ABTS-2025-2026.pdf"
+  download
+  class="inline-flex items-center gap-2 bg-black text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition pointer-events-auto"
+>
+  Download projectdocumentatie hier!
+  <span>↓</span>
+</a>
+
+
+    </div>
+  </div>
+
+</section>
+
+<!-- WEEKS -->
+<section id="weeks" class="bg-gray-50 scroll-mt-24">
+
+
+  <div class="max-w-7xl mx-auto px-6 py-28">
+    <h2 class="text-3xl font-bold mb-4">Weekoverzicht</h2>
+    <p class="text-gray-600 mb-12 max-w-2xl">
+      Elke week documenteert een nieuwe stap binnen het proces:
+      van onderzoek en concept tot uitwerking en verfijning.
+    </p>
+
+    <!-- Scroll row + arrows -->
+    <div class="flex items-center">
+
+      <!-- Left arrow -->
+      <button id="scrollLeft"
+        class="mr-4 p-3 rounded-full border border-gray-300 bg-white
+               hover:border-black transition">
+        ←
+      </button>
+
+      <!-- Scroll container -->
+      <div
+        id="weeksTop"
+        class="flex gap-6 overflow-x-auto py-6 scrollbar-hide flex-1"
+      >
+
+        <!-- WEEK CARDS -->
+        <a href="week1.html" class="shrink-0 w-[260px] group">
+          <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                      group-hover:-translate-y-1 group-hover:border-black">
+            <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 01</p>
+            <h3 class="font-medium mb-1">Introductie</h3>
+            <p class="text-sm text-gray-500">Over Prototyping Tools</p>
+          </div>
+        </a>
+
+      <a href="week2.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 02</p>
+          <h3 class="font-medium mb-1">Feedbackmoment</h3>
+          <p class="text-sm text-gray-500">Low-fidelity schetsen</p>
+        </div>
+      </a>
+
+      <a href="week3.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 03</p>
+          <h3 class="font-medium mb-1">Figma & Feedback</h3>
+          <p class="text-sm text-gray-500">Wat is Figma?</p>
+        </div>
+      </a>
+
+      <a href="week4.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 04</p>
+          <h3 class="font-medium mb-1">Start Figma</h3>
+          <p class="text-sm text-gray-500">Van papier naar digitaal</p>
+        </div>
+      </a>
+
+      <a href="week5.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 05</p>
+          <h3 class="font-medium mb-1">Verdieping Figma</h3>
+          <p class="text-sm text-gray-500">Correcties</p>
+        </div>
+      </a>
+
+      <a href="week6.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 06</p>
+          <h3 class="font-medium mb-1">HTML en CSS</h3>
+          <p class="text-sm text-gray-500">De inleiding</p>
+        </div>
+      </a>
+
+      <a href="week7,8 & 9.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 07 - 08 - 09</p>
+          <h3 class="font-medium mb-1">Geen les</h3>
+          <p class="text-sm text-gray-500">Geen les</p>
+        </div>
+      </a>
+
+      <a href="week10.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 10</p>
+          <h3 class="font-medium mb-1">Feedback website</h3>
+          <p class="text-sm text-gray-500">Aandachtspunten</p>
+        </div>
+      </a>
+
+      <a href="week11-14.html" class="snap-start shrink-0 w-[260px] group">
+        <div class="p-6 bg-white rounded-2xl border border-gray-200 transition
+                    group-hover:-translate-y-1 group-hover:border-black">
+          <p class="text-xs tracking-widest text-gray-500 mb-3">WEEK 11-14</p>
+          <h3 class="font-medium mb-1">Tailwind - App-prototype</h3>
+          <p class="text-sm text-gray-500">In 2 groepen</p>
+        </div>
+      </a>
+
+    </div>
+
+      <!-- Right arrow -->
+      <button id="scrollRight"
+        class="ml-4 p-3 rounded-full border border-gray-300 bg-white
+               hover:border-black transition">
+        →
+      </button>
+
+    </div>
+
+    <!-- Onderste rij -->
+    <div
+      id="weeksBottom"
+      class="flex gap-6 overflow-x-auto py-6 mt-10 scrollbar-hide opacity-60"
+    ></div>
+
+  </div>
+</section>
+
+
+<!-- DESIGN -->
+<section id="design">
+  <div class="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-20 items-center">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6">Design keuzes</h2>
+      <p class="text-gray-600 mb-6 max-w-xl">
+        Bekijk hier al de details over de verschillende keuzes die zijn gemaakt rond typografie en kleur. 
+      </p>
+      <a href="Kleuren & Typografie.html"
+   class="inline-block bg-black text-[#FFFFFF] px-7 py-3 rounded-full text-sm font-medium hover:bg-[#E5E7EB] transition">
+  Bekijk designverantwoording →
+</a>
+
+    </div>
+
+    
+
+    <div class="flex-1">
+      <img
+      src="./img/Afbeeldingen/Scherm­afbeelding 2026-01-04 om 09.41.20.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+<br> <br> 
+ <div class="flex-1">
+      <img
+      src="./img/Scherm­afbeelding 2026-01-04 om 09.58.14.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-gray-50">
+  <div class="max-w-3xl mx-auto px-6 py-28 text-center">
+    <h2 class="text-3xl font-bold mb-6">Over dit project</h2>
+    <p class="text-gray-600">
+      Deze website documenteert mijn ontwerpproces binnen het vak Prototyping Tools (PRTT),
+      met focus op onderzoek, reflectie, uitwerking en visuele onderbouwing.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-gray-200 py-10 text-center text-sm text-gray-500">
+  © 2025 Laurens Abts — Projectdocumentatie PRTT
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+<script>
+  const topRow = document.getElementById('weeksTop');
+  const bottomRow = document.getElementById('weeksBottom');
+
+  // maak de onderste rij IDENTIEK (echte DOM)
+  bottomRow.innerHTML = topRow.innerHTML;
+
+  let active = null;
+  let rafId = null;
+
+  function syncScroll(source, target) {
+    const sourceMax = source.scrollWidth - source.clientWidth;
+    const targetMax = target.scrollWidth - target.clientWidth;
+
+    if (sourceMax <= 0 || targetMax <= 0) return;
+
+    const ratio = source.scrollLeft / sourceMax;
+    target.scrollLeft = targetMax - ratio * targetMax;
+  }
+
+  function onScroll(e) {
+    active = e.target;
+
+    if (rafId) return;
+
+    rafId = requestAnimationFrame(() => {
+      if (active === topRow) {
+        syncScroll(topRow, bottomRow);
+      } else if (active === bottomRow) {
+        syncScroll(bottomRow, topRow);
+      }
+
+      rafId = null;
+    });
+  }
+
+  topRow.addEventListener('scroll', onScroll, { passive: true });
+  bottomRow.addEventListener('scroll', onScroll, { passive: true });
+</script>
+
+<script>
+  const scrollAmount = 300;
+
+  document.getElementById('scrollLeft').addEventListener('click', () => {
+    topRow.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  document.getElementById('scrollRight').addEventListener('click', () => {
+    topRow.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+
+<div
+  id="lightbox"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
+>
+  <img
+    id="lightbox-img"
+    class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl"
+  />
+</div>
+
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // Alle afbeeldingen met class "zoomable"
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+    });
+  });
+
+  // Sluiten bij klik
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 01 — Prototyping Tools | Laurens Abts</title>
+
+  <link href="../dist/output.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <div class="font-semibold tracking-tight">Laurens Abts -  1GDM2</div>
+
+    <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+  <a href="index.html#top" class="hover:text-black">Home</a>
+<a href="index.html#weeks" class="hover:text-black">Weken</a>
+<a href="index.html#design" class="hover:text-black">Design</a>
+<a href="index.html#about" class="hover:text-black">Over</a>
+
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4 text-sm">
+      <a href="login.html" class="text-gray-600 hover:text-black">Login</a>
+      <a href="signup.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+        Sign up
+      </a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-sm border px-3 py-1 rounded-full">
+      Menu
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white px-6 py-6 flex flex-col items-center space-y-4 text-sm">
+   <a href="index.html#top" class="hover:text-black">Home</a>
+<a href="index.html#weeks" class="hover:text-black">Weken</a>
+<a href="index.html#design" class="hover:text-black">Design</a>
+<a href="index.html#about" class="hover:text-black">Over</a>
+
+  </div>
+</header>
+
+  <!-- PAGE INTRO -->
+  <section class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+
+     <h1 class="font-title text-5xl md:text-6xl font-bold mb-12">
+     Week 01
+     </h1>
+
+      <h1 class="font-title text-3xl md:text-4xl font-semibold mb-4">
+        Introductie Prototyping Tools
+      </h1>
+
+      <p class=class="font-title text-xl font-semibold mb-2">
+        Tijdens de eerste lessen van Prototyping Tools leerden we wat prototyping inhoudt en welke rol het speelt in het ontwerpproces. 
+        We kregen een opdracht om treinborden te herontwerpen en werkten onze eerste ideeën uit in low-fidelity schetsen.
+      </p>
+
+    </div>
+  </section>
+
+
+<br>
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4"> Introductie van het vak</h2>
+      <p class="text-gray-600 leading-relaxed">
+      Tijdens de eerste les kregen we voornamelijk uitleg over het vak
+      Prototyping Tools (PRTT). We ontdekten hoe breed dit domein is en
+      welke rol prototyping speelt binnen het ontwerpproces.
+      <br><br>
+      Week 1 stond vooral in het teken van de algemene term prototyping tools. 
+      Tijdens deze les maakten we voor het eerst kennis met het vak zelf. 
+      Na een voormiddag vol uitleg voelde dit dan ook aan als onze eerste echte les op de hogeschool.
+    </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Afbeeldingen/Week1/SvD_Willemen_AP Viaduct 39low res (web).jpg"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section class="max-w-6xl mx-auto px-6 py-12">
+<!-- Container met marge en maximale breedte -->
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+
+    <!-- Linker vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Afbeeldingen/img.jpg"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+
+    <!-- Rechter vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4"> De eerste opdracht </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Aan het einde van de les kregen we een opdracht mee. 
+    We moesten bestaande treinborden herontwerpen, met als doel ze toegankelijker te maken voor anderstaligen en ze in het 
+    algemeen beter doordacht uit te werken. 
+      </p>
+    </div>
+</section>
+
+
+
+<!-- Section -->
+    <section class="max-w-3xl mx-auto px-6 py-20 space-y-20"> 
+
+      <p class="text-gray-600 leading-relaxed mb-6">
+     Daarbij moesten we rekening 
+    houden met onder andere typografie, kleurgebruik en duidelijke, handige vertalingen.
+    De opdracht bestond uit het ontwerpen van drie verschillende borden:<br> <br> 
+    - een algemeen scherm voor in de inkomhal<br> <br> 
+    - een perronscherm<br> <br> 
+    - een wagonscherm<br> <br> 
+    Elk bord had een ander formaat en een andere context, 
+    waardoor de informatie telkens aangepast en gerichter 
+    moest worden weergegeven per locatie.
+    <br> Daarnaast leerden we het verschil tussen high-fidelity en 
+    low-fidelity prototypes. Tegen de volgende les moesten we 
+    aan de slag met low-fidelity schetsen van ons eerste ontwerp 
+    voor de treinborden.
+      </p>
+
+    </section>
+    
+
+
+
+    <section class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Flex container voor de twee vakken -->
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Linker vak: tekst -->
+    <div class="flex-1">
+      <h2 class="text-2xl font-semibold mb-4"> Wat houdt low-fidelity nu eigenlijk in?      </h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+  
+      Low-fidelity prototypes zijn eenvoudige, snelle schetsen 
+      die focussen op de structuur, indeling en basisfunctionaliteit 
+      van een ontwerp, zonder veel aandacht voor details zoals kleur, 
+      typografie of afwerking. Ze helpen om ideeën snel te visualiseren en 
+      te testen voordat er verder wordt gegaan naar een meer uitgewerkt ontwerp.
+      </p>
+    </div>
+
+    <!-- Rechter vak: afbeelding -->
+    <div class="flex-1">
+      <img
+      src="./img/Afbeeldingen/Week1/unnamed.png"
+      alt="Schets week 1"
+      class="zoomable cursor-zoom-in rounded-xl max-w-[400px] w-full h-auto mt-4 md:mt-0"
+    />
+    </div>
+  </div>
+</div>
+</section>
+  </main>
+
+
+
+    <section class="border-t border-gray-200 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 py-16 text-center">
+
+    <p class="text-sm text-gray-500 mb-6">
+      Bekijk ook de andere weken
+    </p>
+
+    <div class="flex justify-center gap-2 flex-wrap">
+
+          <a href="week1.html"
+         class="px-4 py-2 rounded-full bg-black text-white border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 01
+      </a>
+
+      <a href="week2.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 02
+      </a>
+
+
+      <a href="week3.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 03
+      </a>
+      
+
+      <a href="week4.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 04
+      </a>
+
+      <a href="week5.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 05
+      </a>
+
+      <a href="week6.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 06
+      </a>
+
+      <a href="week7,8 & 9.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 07 - 09
+      </a>
+
+      <a href="week10.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 10
+      </a>
+
+      <a href="week11-14.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        Week 11-14
+      </a>
+
+      <br>
+
+    <a href="Kleuren & Typografie.html"
+         class="px-4 py-2 rounded-full border border-gray-300 text-sm
+                text-gray-600 hover:border-black hover:text-black transition">
+        DESIGN KEUZES
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+    © 2025 Laurens Abts — Projectdocumentatie PRTT
+  </footer>
+
+
+
+  <script>
+  menuBtn.addEventListener("click", () => {
+  if (mobileMenu.classList.contains("hidden")) {
+    mobileMenu.classList.remove("hidden");
+    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+  } else {
+    mobileMenu.style.maxHeight = "0";
+    setTimeout(() => mobileMenu.classList.add("hidden"), 300); // wacht tot transition klaar is
+  }
+});
+</script>
+
+
+
+
+<div
+  id="lightbox"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
+>
+  <img
+    id="lightbox-img"
+    class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl"
+  />
+</div>
+
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // Alle afbeeldingen met class "zoomable"
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+    });
+  });
+
+  // Sluiten bij klik
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  });
+</script>
+
+
+</body>
+</html>
